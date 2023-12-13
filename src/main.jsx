@@ -10,6 +10,8 @@ import {
 import Home from './pages/Home';
 import Notfound from './pages/Notfound';
 import About from './pages/About';
+import Registeration from './pages/Registeration';
+import Students from './pages/Students';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/*",
         element: <Notfound />,
+      },
+      {
+        path: "/students",
+        element: <Students />,
+      },
+      {
+        path: "/register",
+        element: <Registeration />,
       }
     ]
   },
