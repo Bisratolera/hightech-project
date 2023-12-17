@@ -1,6 +1,3 @@
-## Vite_React_Tailwind_ReactRouter_JS_Starter
-
-React Starter template with
-- Vite  
-- Tailwind 
-- React Router
+#this is a broject of hightech by <span>leul</span> and other hightech staff students
+##
+comment any doubts here
