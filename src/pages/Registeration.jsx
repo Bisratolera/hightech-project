@@ -1,9 +1,11 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
+
+
 const Registeration = () => {
   return (
   <Fade direction="left" cascade triggerOnce>
-    <div className="join flex flex-col items-center justify-center gap-4">
+    <div className="join flex flex-col items-start w-full justify-center gap-4 pl-4">
       <div className="flex flex-row gap-2 items-center justify-center">
         <label htmlFor="fullName" className="w-1/5 text-right">
           Full Name:
