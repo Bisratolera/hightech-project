@@ -11,7 +11,7 @@ const About = () => {
       <div className="text-container flex-1">
         <Fade direction="left" cascade triggerOnce>
           <p className="paragraph justify-center text-center">
-            This project is created by hightech student{' '}
+            This project is created with ❤️ by hightech student{' '}
             <span className="text-primary caret-red-900 font-extrabold  ">Leul</span> and other teams.
           </p>
         </Fade>
