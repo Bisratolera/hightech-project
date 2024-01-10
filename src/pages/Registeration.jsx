@@ -1,91 +1,100 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-
+import {Toaster, toast} from "react-hot-toast"
 
 const Registeration = () => {
+  function showToast() {
+    toast.success("it works :)");
+  }
   return (
   <Fade direction="left" cascade triggerOnce>
-    <div className="join flex flex-row items-start w-full justify-end gap-4 pl-4">
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="fullName" className="w-1/5 text-right">
-          Full Name:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Full Name"
-        />
+    <Toaster />
+    <form className="flex flex-col gap-3 items-center" onSubmit={showToast}>
+      {/* student's image with its name */}
+      <div className="flex flex-col gap-3 py-4">
+      <div className="avatar">
+        <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        </div>
+      </div>       
+      <label>Jhon Doe</label>
       </div>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="stream" className="w-1/5 text-right">
-          Stream:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Stream"
-        />
+      {/* main form elements*/}
+      <div className="flex flex-row gap-5">
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">full name</span>
       </div>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="division" className="w-1/5 text-right">
-          Division:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Division"
-        />
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+      {/*  */}
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">stream</span>
       </div>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="idNo" className="w-1/5 text-right">
-          ID Number:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="ID Number"
-        />
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+        <div className="flex flex-col gap-3"></div>
       </div>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="sex" className="w-1/5 text-right">
-          Sex:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Sex"
-        />
+      {/* form element next */}
+      <div className="flex flex-row gap-5">
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">division</span>
       </div>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="sc" className="w-1/5 text-right">
-          Sub City:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Sub City"
-        />
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+      {/*  */}
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">idno</span>
       </div>
-      <Fade direction='right' cascade triggerOnce>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="woreda" className="w-1/5 text-right">
-          Woreda:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Woreda"
-        />
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+        <div className="flex flex-col gap-3"></div>
       </div>
-      </Fade>
-      <Fade direction="right" cascade triggerOnce>
-      <div className="flex flex-row gap-2 items-center justify-center">
-        <label htmlFor="telNo" className="w-1/5 text-right">
-          Tel No:
-        </label>
-        <input
-          className="input input-bordered w-4/5 h-12"
-          placeholder="Tel No"
-        />
+      {/*  */}
+      <div className="flex flex-row gap-5">
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">gender</span>
       </div>
-    </Fade>
-      <button className="btn btn-active btn-ghost relative justify-center items-center rounded-square border-inherit bg-orange-600 w-100 h-12">
-        Submit
-      </button>
-    </div>
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+      {/*  */}
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">subcity</span>
+      </div>
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+        <div className="flex flex-col gap-3"></div>
+      </div>
+
+      <div className="flex flex-row gap-5">
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">woreda</span>
+      </div>
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+      {/*  */}
+      <label className="form-control w-full max-w-xs">
+      <div className="label">
+     <span className="label-text">phone no</span>
+      </div>
+      <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+      </label>
+        <div className="flex flex-col gap-3"></div>
+      </div>
+
+
+   
+      <div className="flex flex-row gap-7">
+          <button type="submit" className='btn' >Register</button>
+          <button type="reset" className='btn btn-error'>Cancel</button>
+        </div>
+    </form>
   </Fade>
   );
 };
